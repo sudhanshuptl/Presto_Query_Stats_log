@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info" name="PrestoQueryLog" packages="">
+    <Appenders>
+        <RollingFile name="RollingFile">
+            <FileName>/mnt0/var/log/presto/presto_querylog.log</FileName>
+            <FilePattern>/mnt0/var/log/presto/presto_querylog-%d{yyyy-MM-dd-hh-mm-ss}.log</FilePattern>
+            <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS}|%msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="2 MB"/>
+                <CronTriggeringPolicy schedule="58 59 23 ? * * *"/>
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="RollingFile"/>
+        </Root>
+    </Loggers>
+</Configuration>

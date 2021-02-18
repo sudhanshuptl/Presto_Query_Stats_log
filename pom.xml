@@ -15,7 +15,7 @@
         <presto-spi.version>0.197</presto-spi.version>
         <!--NOTE: Presto 0.187 - 0.202 are using 2.8.1-->
         <!--This dependency comes from airbase/airbase <= 80-->
-        <jackson.version>2.10.1</jackson.version>
+        <jackson.version>2.12.1</jackson.version>
         <!-- Test -->
         <junit.jupiter.version>5.2.0</junit.jupiter.version>
         <junit.platform.version>1.2.0</junit.platform.version>

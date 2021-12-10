@@ -11,7 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <log4j2.version>2.11.0</log4j2.version>
+        <log4j2.version>2.15.0</log4j2.version>
         <presto-spi.version>0.197</presto-spi.version>
         <!--NOTE: Presto 0.187 - 0.202 are using 2.8.1-->
         <!--This dependency comes from airbase/airbase <= 80-->
